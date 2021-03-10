@@ -1,0 +1,4 @@
+include ':router-api'
+include ':news'
+include ':app'
+rootProject.name = "AsmTest"
