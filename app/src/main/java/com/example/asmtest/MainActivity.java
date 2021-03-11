@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final TextView tv1 = findViewById(R.id.tv1);
+        final TextView tv2 = findViewById(R.id.tv2);
         tv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,6 +42,14 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             }
                         });
+            }
+        });
+
+        tv2.setOnClickListener(new View.OnClickListener() {
+            @NoDoubleClick
+            @Override
+            public void onClick(View view) {
+                Log.e("======", "======点我一下");
             }
         });
     }

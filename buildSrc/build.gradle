@@ -4,6 +4,11 @@ dependencies {
     implementation 'com.android.tools.build:gradle:3.1.2'
     compile 'com.android.tools.build:transform-api:1.5.0'
     compile 'org.javassist:javassist:3.20.0-GA'
+    //ASM
+    implementation 'org.ow2.asm:asm:7.1'
+    implementation 'org.ow2.asm:asm-util:7.1'
+    implementation 'org.ow2.asm:asm-commons:7.1'
+
     compile gradleApi()
     compile localGroovy()
 }
