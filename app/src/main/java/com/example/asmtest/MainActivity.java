@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final TextView tv1 = findViewById(R.id.tv1);
         final TextView tv2 = findViewById(R.id.tv2);
+        final TextView tv3 = findViewById(R.id.tv3);
         tv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,10 +47,17 @@ public class MainActivity extends AppCompatActivity {
         });
 
         tv2.setOnClickListener(new View.OnClickListener() {
-            @NoDoubleClick
+
             @Override
             public void onClick(View view) {
                 Log.e("======", "======点我一下");
+            }
+        });
+        tv3.setOnClickListener(new View.OnClickListener() {
+            @NoDoubleClick
+            @Override
+            public void onClick(View view) {
+                Log.e("======", "======点我一下（白名单）");
             }
         });
     }
